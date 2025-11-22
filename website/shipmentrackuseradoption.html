@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CN Railway - Shipment Tracking Case Study | Andrés Rodríguez G.</title>
+    <meta name="description" content="Case study: Modernizing CN Railway's shipment tracking platform through user insight, improving adoption and user experience. UX/UI design by Andrés Rodríguez G.">
+    <meta name="keywords" content="CN Railway, Shipment Tracking, UX Case Study, UI Case Study, Logistics Design, Andrés Rodríguez">
+    <meta name="author" content="Andrés Rodríguez G.">
+    <meta property="og:title" content="CN Railway - Shipment Tracking Case Study | Andrés Rodríguez G.">
+    <meta property="og:description" content="Case study: Modernizing CN Railway's shipment tracking platform through user insight.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://andresrodriguez.net/shipmentrackuseradoption.html">
+    <link rel="canonical" href="https://andresrodriguez.net/shipmentrackuseradoption.html">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7CY5G9TNG4"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-7CY5G9TNG4');
+    </script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=Space+Mono:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section - Reusable Nav Component -->
+    <header class="detail-page-header">
+        <nav class="nav-bar">
+            <div class="nav-left">
+                <div class="avatar">
+                    <img src="assets/avatar-andresr.png" alt="Andrés Rodríguez G.">
+                </div>
+                <div class="nav-title">
+                    <p class="name">Andrés Rodríguez G.</p>
+                    <p class="title">UX/UI Creative Designer</p>
+                </div>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-menu-item">
+                    <img src="assets/icon-about me.png" alt="About me">
+                    <span>About Me</span>
+                </a>
+                <a href="portfolio.html" class="nav-menu-item">
+                    <img src="assets/icon-portfolio.png" alt="Portfolio">
+                    <span>Portfolio</span>
+                </a>
+                <a href="references.html" class="nav-menu-item">
+                    <img src="assets/icon-references.png" alt="References">
+                    <span>References</span>
+                </a>
+            </div>
+            <button class="mobile-menu-button" id="mobileMenuButton" aria-label="Toggle menu">
+                <span class="hamburger-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+                <span class="menu-label">Menu</span>
+            </button>
+        </nav>
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+            <div class="mobile-menu-content">
+                <a href="index.html" class="mobile-menu-item">
+                    <img src="assets/icon-about me.png" alt="About me">
+                    <span>About Me</span>
+                </a>
+                <a href="portfolio.html" class="mobile-menu-item">
+                    <img src="assets/icon-portfolio.png" alt="Portfolio">
+                    <span>Portfolio</span>
+                </a>
+                <a href="references.html" class="mobile-menu-item">
+                    <img src="assets/icon-references.png" alt="References">
+                    <span>References</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content - Detail Page Sections -->
+    <main class="detail-page-main">
+        <div class="detail-page-container">
+            <!-- Hero Section: Problem Statement, My Team, Hero Image -->
+            <section class="detail-section">
+                <div class="detail-section-two-column">
+                    <div class="detail-section-col">
+                        <h2 class="detail-section-subtitle" style="font-size: 20px; font-weight: 700; margin-bottom: var(--tokens-spacing-3);">Problem Statement</h2>
+                        <p class="detail-section-text">
+                            The introduction of the new shipment tracking platform saw lower-than-expected adoption as users clung to outdated but familiar tools. The challenge lay not only in modernizing the interface but also in understanding users' attachment to the old tools and designing an equally intuitive experience that offered improved efficiency and clarity.
+                        </p>
+                    </div>
+                    <div class="detail-section-col">
+                        <h2 class="detail-section-subtitle" style="font-size: 20px; font-weight: 700; margin-bottom: var(--tokens-spacing-3);">My Team</h2>
+                        <div class="detail-section-text">
+                            <p style="margin: 0 0 8px 0;">Business Analyst</p>
+                            <p style="margin: 0 0 8px 0;">Product Owner</p>
+                            <p style="margin: 0 0 8px 0;">UX Manager</p>
+                            <p style="margin: 0 0 8px 0;">UX/UI Lead (me!)</p>
+                            <p style="margin: 0;">UX Strategist</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-section-image" style="margin: var(--tokens-spacing-8) 0;">
+                    <img src="assets/cnHeroBanner.png" alt="CN Railway Shipment Tracking Hero">
+                </div>
+            </section>
+
+            <!-- Constraints and Assumptions Section -->
+            <section class="detail-section">
+                <h2 class="detail-section-title" style="font-size: 36px; font-weight: 400; margin-bottom: var(--tokens-spacing-10);">Constraints and Assumptions</h2>
+                <div class="detail-section-image" style="margin-bottom: var(--tokens-spacing-8);">
+                    <img src="assets/cnExpertReview.png" alt="Constraints and Assumptions">
+                </div>
+                <div class="constraint-cards-container">
+                    <!-- Business Card -->
+                    <div class="constraint-card">
+                        <div class="constraint-card-header">
+                            <div class="constraint-card-icon">
+                                <img src="assets/dedb03b3a47720cfa54f1ae0979b1929d8ab6f4b.svg" alt="Business Icon">
+                            </div>
+                            <h3 class="constraint-card-title">BUSINESS</h3>
+                        </div>
+                        <div class="constraint-card-content">
+                            <div class="constraint-section">
+                                <h4 class="constraint-heading">Constraints</h4>
+                                <p class="constraint-text">Redesign must support existing workflows; legacy tools remain temporarily in use.</p>
+                            </div>
+                            <div class="constraint-divider"></div>
+                            <div class="constraint-section">
+                                <h4 class="constraint-heading">Assumptions</h4>
+                                <p class="constraint-text">Improved adoption reduces support costs; stakeholders are motivated to support a unified, modern platform.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- User Card -->
+                    <div class="constraint-card">
+                        <div class="constraint-card-header">
+                            <div class="constraint-card-icon">
+                                <img src="assets/c1741e3b9c42cf0ae3bc98102f76580a4ef323f8.svg" alt="User Icon">
+                            </div>
+                            <h3 class="constraint-card-title">USER</h3>
+                        </div>
+                        <div class="constraint-card-content">
+                            <div class="constraint-section">
+                                <h4 class="constraint-heading">Constraints</h4>
+                                <p class="constraint-text">Access varied by subscription/role; users relied on legacy tools.</p>
+                            </div>
+                            <div class="constraint-divider"></div>
+                            <div class="constraint-section">
+                                <h4 class="constraint-heading">Assumptions</h4>
+                                <p class="constraint-text">Preference for legacy tools is due to familiarity; efficiency and predictability matter more than visuals; aligned navigation can boost adoption.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Technical Card -->
+                    <div class="constraint-card">
+                        <div class="constraint-card-header">
+                            <div class="constraint-card-icon">
+                                <img src="assets/7b9aa3330273309c29b1d70df0cd93962d6c7998.svg" alt="Technical Icon">
+                            </div>
+                            <h3 class="constraint-card-title">TECHNICAL</h3>
+                        </div>
+                        <div class="constraint-card-content">
+                            <div class="constraint-section">
+                                <h4 class="constraint-heading">Constraints</h4>
+                                <p class="constraint-text">Part of outdated e-biz system; cross-app navigation limited; legacy architecture restricted redesign flexibility.</p>
+                            </div>
+                            <div class="constraint-divider"></div>
+                            <div class="constraint-section">
+                                <h4 class="constraint-heading">Assumptions</h4>
+                                <p class="constraint-text">Redesign must work within system limits; incremental improvements acceptable if core operations remain stable.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- User Segments Section -->
+            <section class="detail-section">
+                <h2 class="detail-section-title" style="font-size: 36px; font-weight: 400; margin-bottom: var(--tokens-spacing-10);">User Segments</h2>
+                <div class="detail-section-image" style="margin-bottom: var(--tokens-spacing-8);">
+                    <img src="assets/cnMobileSamples.png" alt="User Segments">
+                </div>
+                <div class="detail-section-two-column">
+                    <div class="detail-section-col">
+                        <h3 class="detail-section-subtitle" style="font-size: 20px; font-weight: 700; margin-bottom: var(--tokens-spacing-3);">Logistics (Primary )</h3>
+                        <p class="detail-section-text">
+                            Logistics coordinators are responsible for monitoring shipment progress and managing exceptions. They rely on real-time visibility to ensure goods reach their destination as scheduled.
+                        </p>
+                    </div>
+                    <div class="detail-section-col">
+                        <h3 class="detail-section-subtitle" style="font-size: 20px; font-weight: 700; margin-bottom: var(--tokens-spacing-3);">Operation Managers (Secondary)</h3>
+                        <p class="detail-section-text">
+                            Operations managers oversee performance at a higher level, tracking multiple shipments and monitoring key metrics. Their main frustration stemmed from fragmented data and inconsistent user experiences across tools.
+                        </p>
+                    </div>
+                    <div class="detail-section-col">
+                        <h3 class="detail-section-subtitle" style="font-size: 20px; font-weight: 700; margin-bottom: var(--tokens-spacing-3);">Customer Support (Internal)</h3>
+                        <p class="detail-section-text">
+                            Customer support agents use the same systems to assist clients in tracing or verifying shipments. They need fast lookup capabilities and clear visibility into shipment milestones to provide accurate responses.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Google Analytics Insights Section -->
+            <section class="detail-section">
+                <h2 class="detail-section-title" style="font-size: 36px; font-weight: 400; margin-bottom: var(--tokens-spacing-3);">Google Analytics Insights</h2>
+                <p class="detail-section-text" style="font-size: 18px; margin-bottom: var(--tokens-spacing-10);">
+                    Behavioral data analysis revealed key usability gaps that were limiting adoption and trust in the platform.
+                </p>
+                <div class="detail-section-image" style="border: 1px solid #a3a3a3; border-radius: 8px; margin-bottom: var(--tokens-spacing-10);">
+                    <img src="assets/cnGoogleAnalytics.png" alt="Google Analytics Insights">
+                </div>
+                <div class="detail-section-two-column">
+                    <div class="detail-section-col">
+                        <h3 class="detail-section-subtitle" style="font-size: 20px; font-weight: 700; margin-bottom: var(--tokens-spacing-3);">1. Feature Discoverability</h3>
+                        <p class="detail-section-text">
+                            Click tagging in strategic areas—such as Shipment Details and Map View—showed that many users struggled to find, or were unaware of, critical features that could enhance shipment monitoring and decision-making.
+                        </p>
+                    </div>
+                    <div class="detail-section-col">
+                        <h3 class="detail-section-subtitle" style="font-size: 20px; font-weight: 700; margin-bottom: var(--tokens-spacing-3);">2. Display and Accessibility Issues</h3>
+                        <p class="detail-section-text">
+                            Usage data showed that while most users operated on 1920×1080 screens, approximately 40% used smaller resolutions (1440×1024 or 1280×832). Because the interface was designed for a fixed resolution, those users experienced cropped layouts, overlapping elements, and constrained navigation—revealing a clear gap in accessibility and overall usability.
+                        </p>
+                    </div>
+                    <div class="detail-section-col">
+                        <h3 class="detail-section-subtitle" style="font-size: 20px; font-weight: 700; margin-bottom: var(--tokens-spacing-3);">Design Opportunity</h3>
+                        <p class="detail-section-text">
+                            Improve adaptive layout design and enhance feature discoverability to increase adoption, trust, and seamless usability across different user environments.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- User Feedback Section -->
+            <section class="detail-section">
+                <h2 class="detail-section-title" style="font-size: 36px; font-weight: 400; margin-bottom: var(--tokens-spacing-3);">User Feedback (main painpoints)</h2>
+                <div class="detail-section-col" style="margin-bottom: var(--tokens-spacing-6);">
+                    <h3 class="detail-section-subtitle" style="font-size: 20px; font-weight: 700; margin-bottom: var(--tokens-spacing-3);">What we heard:</h3>
+                    <p class="detail-section-text">
+                        Users struggled to find or trust critical telemetry data—container temperature at loading, live shipment monitoring, and historical temperature records. Information was often hidden or unavailable, forcing teams to rely on manual checks or scattered tools.
+                    </p>
+                </div>
+                <div class="detail-quote-container" style="background-color: #1c2a39; border-radius: 24px; padding: 64px; margin-bottom: var(--tokens-spacing-8);">
+                    <div class="detail-quote-content">
+                        <div class="detail-quote-image">
+                            <img src="assets/cnStakeHolderQuote.png" alt="Carlos Alvarade Quote">
+                        </div>
+                        <div class="detail-quote-text">
+                            <p class="detail-quote-quote">"Without a clear view of our temperature data, we're always reacting instead of preventing losses."</p>
+                            <div class="detail-quote-author">
+                                <p class="detail-quote-name">Carlos Alvarade</p>
+                                <p class="detail-quote-title">Logistics Operation Manger</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-section-two-column">
+                    <div class="detail-section-col">
+                        <h3 class="detail-section-subtitle" style="font-size: 20px; font-weight: 700; margin-bottom: var(--tokens-spacing-3);">Impact on Operations</h3>
+                        <ul class="detail-list">
+                            <li>Higher spoilage rates, energy costs, and scheduling delays.</li>
+                            <li>Delays in detecting temperature deviations during transit.</li>
+                            <li>Time lost compiling historical reports for claims or audits.</li>
+                        </ul>
+                    </div>
+                    <div class="detail-section-col">
+                        <h3 class="detail-section-subtitle" style="font-size: 20px; font-weight: 700; margin-bottom: var(--tokens-spacing-3);">What they need:</h3>
+                        <ul class="detail-list">
+                            <li>Centralized, easy-to-access telemetry view.</li>
+                            <li>Clear alerts and trends instead of raw data points.</li>
+                            <li>Simple data export for analysis and reporting.</li>
+                        </ul>
+                    </div>
+                    <div class="detail-section-col">
+                        <h3 class="detail-section-subtitle" style="font-size: 20px; font-weight: 700; margin-bottom: var(--tokens-spacing-3);">Design Opportunity</h3>
+                        <p class="detail-section-text">
+                            Enable real-time visibility and actionable insights that empower users to make faster, evidence-based decisions—reducing waste, downtime, and operational uncertainty across the cold chain.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Internal Audit Section -->
+            <section class="detail-section">
+                <h2 class="detail-section-title" style="font-size: 36px; font-weight: 400; margin-bottom: var(--tokens-spacing-10);">Internal Audit (Expert Review)</h2>
+                <div class="detail-section-image" style="border: 1px solid #a3a3a3; border-radius: 8px; margin-bottom: var(--tokens-spacing-8);">
+                    <img src="assets/cnExpertReview.png" alt="Internal Audit Expert Review">
+                </div>
+                <div class="detail-section-two-column">
+                    <div class="detail-section-col">
+                        <h3 class="detail-section-subtitle" style="font-size: 20px; font-weight: 700; margin-bottom: var(--tokens-spacing-3);">Impact on Operations</h3>
+                        <p class="detail-section-text">
+                            The reporting workflow relied on three overlapping objects <strong>(01)</strong>—saved searches, tiles, and reports—where saved searches effectively served as reports, and tiles were merely their graphical representations.
+                        </p>
+                    </div>
+                    <div class="detail-section-col">
+                        <h3 class="detail-section-subtitle" style="font-size: 20px; font-weight: 700; margin-bottom: var(--tokens-spacing-3);">What They Need</h3>
+                        <p class="detail-section-text">
+                            While customers wanted to see more <strong>(02) and (03)</strong> data at once, the presentation lacked a clear navigational structure, making it hard to explore and navigate intuitively.
+                        </p>
+                    </div>
+                    <div class="detail-section-col">
+                        <h3 class="detail-section-subtitle" style="font-size: 20px; font-weight: 700; margin-bottom: var(--tokens-spacing-3);">Design Opportunity</h3>
+                        <p class="detail-section-text">
+                            Redefine the reporting experience to turn complexity into clarity. By streamlining workflows, standardizing navigation, and presenting data through purposeful structure, the system can empower users to find meaning faster—building trust, reducing cognitive load, and strengthening overall operational efficiency.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Adoption Strategy Summary Section -->
+            <section class="detail-section" style="background-color: #1c2a39; padding: 64px; border-radius: 0; margin: var(--tokens-spacing-8) 0;">
+                <div class="detail-section-col" style="max-width: 1213px;">
+                    <h2 class="detail-section-title" style="font-size: 36px; font-weight: 700; color: #f1f5f9; margin-bottom: 30px;">Adoption Strategy Summary — improving navigation, visibility, and accessibility.</h2>
+                    <p class="detail-section-text" style="color: #f1f5f9;">
+                        To increase adoption of the shipment-tracking tool, we focused on strengthening discoverability, clarity, and usability. Entry points across the platform were restructured to align with user goals, making navigation more intuitive and consistent. We introduced a well-defined URL structure and intuitive navigation system so users could easily share and revisit specific pages, improving collaboration and trust. At the same time, the interface was rebuilt with responsive layouts, ensuring smooth performance and visual clarity across different resolutions. Together, these improvements directly addressed the main pain points—limited customization, poor visibility of items, and fragmented access resulting in a platform that felt cohesive, efficient, and easier to adopt.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Well-Defined URL System Section -->
+            <section class="detail-section">
+                <h2 class="detail-section-title" style="font-size: 36px; font-weight: 400; margin-bottom: var(--tokens-spacing-6);">Well-Defined URL System</h2>
+                <div class="detail-section-col" style="max-width: 1200px; margin-bottom: var(--tokens-spacing-8);">
+                    <h3 class="detail-section-subtitle" style="font-size: 20px; font-weight: 700; margin-bottom: var(--tokens-spacing-3);">Shareable Links</h3>
+                    <p class="detail-section-text">
+                        Enhances user experience by ensuring every piece of content has a clear, unique address. It prevents duplication, improves visibility, and makes sharing effortless.
+                    </p>
+                </div>
+                <div class="detail-section-image">
+                    <img src="assets/cnURLStucture.png" alt="Well-Defined URL System">
+                </div>
+            </section>
+
+            <!-- Proof Of Concept Section -->
+            <section class="detail-section">
+                <h2 class="detail-section-title" style="font-size: 36px; font-weight: 400; margin-bottom: var(--tokens-spacing-6);">Proof Of Concept</h2>
+                <div class="detail-section-col" style="max-width: 1200px; margin-bottom: var(--tokens-spacing-8);">
+                    <h3 class="detail-section-subtitle" style="font-size: 20px; font-weight: 700; margin-bottom: var(--tokens-spacing-3);">Low Fidelity Wireframes</h3>
+                    <p class="detail-section-text">
+                        Introducing a concept where the main actors were the reports, merging 3 different objects as one under the graphic representation of the tracking tile making it dynamic an shareable so that it could live outside of the app and be bridge between platforms. At the same time enabling a clear URL system depicts in a clear and intuitve way what the user is looking for: their shipments, which need attention,
+                    </p>
+                </div>
+                <div class="detail-section-image">
+                    <img src="assets/cnProofOfConcept.png" alt="Proof Of Concept">
+                </div>
+            </section>
+
+            <!-- Increasing Discoverability Section -->
+            <section class="detail-section">
+                <h2 class="detail-section-title" style="font-size: 36px; font-weight: 400; margin-bottom: var(--tokens-spacing-6);">Increasing Discoverability</h2>
+                <div class="detail-section-col" style="max-width: 1200px; margin-bottom: var(--tokens-spacing-8);">
+                    <h3 class="detail-section-subtitle" style="font-size: 20px; font-weight: 700; margin-bottom: var(--tokens-spacing-3);">Turning Complex Data into Clear Structure</h3>
+                    <p class="detail-section-text">
+                        By simply improving how the product was exposed, through clearer hierarchy, strategic placement of entry points, and subtle cues to highlight new features; we achieved a 20% increase in adoption. This showed how small, deliberate changes in structure and visibility can have a major impact on engagement, it makes users curious, confident, and more likely to explore.
+                    </p>
+                </div>
+                <div class="detail-section-image">
+                    <img src="assets/cnEntryPoints.png" alt="Increasing Discoverability">
+                </div>
+            </section>
+
+            <!-- Making more efficient use of space Section -->
+            <section class="detail-section">
+                <h2 class="detail-section-title" style="font-size: 36px; font-weight: 400; margin-bottom: var(--tokens-spacing-10);">Making more efficient use of space</h2>
+                <div class="detail-section-two-column" style="margin-bottom: var(--tokens-spacing-8);">
+                    <div class="detail-section-col">
+                        <div class="detail-section-image" style="border: 1px solid #d4d4d8; border-radius: 5.5px;">
+                            <img src="assets/cnSavedQueries.png" alt="Saved Queries">
+                        </div>
+                    </div>
+                    <div class="detail-section-col">
+                        <h3 class="detail-section-subtitle" style="font-size: 20px; font-weight: 700; margin-bottom: var(--tokens-spacing-3);">Customization is King</h3>
+                        <p class="detail-section-text">
+                            We introduced customizable layouts to accommodate different user workflows. This flexibility let users emphasize what mattered most—reporting results, auditing shipment details, or monitoring operations across North America through a map view.
+                        </p>
+                    </div>
+                </div>
+                <div class="detail-section-image">
+                    <img src="assets/cnLayoutCustomization.png" alt="Layout Customization">
+                </div>
+            </section>
+
+            <!-- Data Tailored to Its Usage Section -->
+            <section class="detail-section">
+                <h2 class="detail-section-title" style="font-size: 36px; font-weight: 400; margin-bottom: var(--tokens-spacing-6);">Data Tailored to Its Usage</h2>
+                <div class="detail-section-col" style="max-width: 1200px; margin-bottom: var(--tokens-spacing-8);">
+                    <h3 class="detail-section-subtitle" style="font-size: 20px; font-weight: 700; margin-bottom: var(--tokens-spacing-3);">Turning Complex Data into Clear Structure</h3>
+                    <p class="detail-section-text">
+                        While users wanted access to more data at once, the previous presentation lacked a clear navigational structure, which made it difficult to explore information intuitively. To address this, we reorganized the shipment details into four main sections instead of six, removing duplicate data and grouping related information logically. Each section was renamed using industry-specific shipment terminology, helping users instantly recognize familiar concepts and move through the interface more naturally. This improved both readability and discoverability, allowing users to find what they needed faster without feeling overwhelmed.
+                    </p>
+                </div>
+                <div class="detail-section-image">
+                    <img src="assets/cnViewSelector.png" alt="Data Tailored to Its Usage">
+                </div>
+            </section>
+
+            <!-- Saved Searches Section -->
+            <section class="detail-section">
+                <div class="detail-section-col" style="max-width: 1200px; margin-bottom: var(--tokens-spacing-8);">
+                    <h3 class="detail-section-subtitle" style="font-size: 20px; font-weight: 700; margin-bottom: var(--tokens-spacing-3);">Saved Searches, Tracking Tiles and Reports Were Merged as "Saved Queries"</h3>
+                    <p class="detail-section-text">
+                        The reporting workflow relied on three overlapping objects saved searches, tiles, and reports—where saved searches effectively served as reports, and tiles were merely their graphical representations we combine them all in one single module, where were used as the trigger to run, share, save, overwrite, modify, etc... In addition to that, all the panels turned into collapsable areas that were taking place in different ways taking the right real state, giving priority to the main information and keeping secondary items in reduced areas.
+                    </p>
+                </div>
+                <div class="detail-section-image">
+                    <img src="assets/cnSavedQueries.png" alt="Saved Queries">
+                </div>
+            </section>
+
+            <!-- Temperature Monitoring Section -->
+            <section class="detail-section">
+                <h2 class="detail-section-title" style="font-size: 36px; font-weight: 400; margin-bottom: var(--tokens-spacing-6);">Temperature Monitoring Section</h2>
+                <div class="detail-section-col" style="max-width: 1200px; margin-bottom: var(--tokens-spacing-8);">
+                    <p class="detail-section-text">
+                        By managing temperature-monitored shipments in a dedicated section, we provided users with a clearer overview to quickly identify anomalies and investigate issues in detail when needed. The temperature view included a customizable date-range selector, enabling users to analyze data with the desired precision and uncover trends or inconsistencies over time.
+                    </p>
+                </div>
+                <div class="detail-section-image">
+                    <img src="assets/cnTemperatureMonitoring.png" alt="Temperature Monitoring">
+                </div>
+            </section>
+
+            <!-- Results Section -->
+            <section class="detail-section">
+                <h2 class="detail-section-title" style="font-size: 36px; font-weight: 400; margin-bottom: var(--tokens-spacing-6);">Simpler Experiences, Stronger Engagement</h2>
+                <div class="detail-section-col" style="max-width: 1200px; margin-bottom: var(--tokens-spacing-8);">
+                    <p class="detail-section-text">
+                        Within four weeks of release, a simplified information hierarchy and clearer navigation lowered cognitive load and encouraged repeat usage. The trend lines show sustained growth in new users alongside a steady reduction in bounce rate over four weeks. The layout uses neutral tones for body text with restrained accents for emphasis to maintain focus on the data.
+                    </p>
+                </div>
+                <div class="detail-section-image" style="margin-bottom: var(--tokens-spacing-8);">
+                    <img src="assets/cnAnalyticsResults.png" alt="Results and Analytics">
+                </div>
+                <div class="detail-section-two-column">
+                    <div class="detail-section-col">
+                        <h3 class="detail-section-subtitle" style="font-size: 20px; font-weight: 700; margin-bottom: var(--tokens-spacing-3);">A specialist said...</h3>
+                        <p class="detail-section-text">
+                            "App is good for right in the moment traces. Data and features in new tools is what I need. Like the details, map on occasion. CN is moving in the right direction with these new tools!"
+                        </p>
+                    </div>
+                    <div class="detail-section-col">
+                        <h3 class="detail-section-subtitle" style="font-size: 20px; font-weight: 700; margin-bottom: var(--tokens-spacing-3);">An industry insider described it this way…</h3>
+                        <p class="detail-section-text">
+                            "We like the new look of the app. It seems to be faster and the details are in better shape. Satisfied with all the data elements currently being displayed on the app details."
+                        </p>
+                    </div>
+                    <div class="detail-section-col">
+                        <h3 class="detail-section-subtitle" style="font-size: 20px; font-weight: 700; margin-bottom: var(--tokens-spacing-3);">A professional from the lumber industry</h3>
+                        <p class="detail-section-text">
+                            "Now I can find my cars and Identify which need my attention, I also can save the as a report and share it with anyone in my team, this really equals and surpass previous tools I've tried"
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer - Reusable Footer Component with Next Project Link -->
+    <!-- Footer - Parallax Footer Component -->
+    <footer class="footer-parallax" id="footerParallax">
+        <div class="footer-parallax-content">
+            <!-- Top Row -->
+            <div class="footer-top-row">
+                <div class="footer-heading-container">
+                    <h2 class="footer-heading">
+                        <span>Let's start</span>
+                        <span>creating together</span>
+                    </h2>
+                    <a href="mailto:iam@andresrodriguez.net" class="footer-cta-button" onclick="gtag('event', 'click', {'event_category': 'Contact', 'event_label': 'Email CTA'});">Let's Talk</a>
+                </div>
+                <div class="footer-social-links">
+                    <a href="https://www.linkedin.com/in/andresfrodriguez" class="footer-social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer" onclick="gtag('event', 'click', {'event_category': 'Social', 'event_label': 'LinkedIn Footer'});">
+                        <img src="assets/LinkedIn.svg" alt="LinkedIn">
+                        <span>Linkedin</span>
+                    </a>
+                    <a href="https://www.behance.net/andresrodriguez28" class="footer-social-link" aria-label="Behance" target="_blank" rel="noopener noreferrer" onclick="gtag('event', 'click', {'event_category': 'Social', 'event_label': 'Behance Footer'});">
+                        <img src="assets/Behance.svg" alt="Behance">
+                        <span>Behance</span>
+                    </a>
+                    <a href="https://github.com/andresrod24" class="footer-social-link" aria-label="GitHub" target="_blank" rel="noopener noreferrer" onclick="gtag('event', 'click', {'event_category': 'Social', 'event_label': 'GitHub Footer'});">
+                        <img src="assets/GitHub.svg" alt="GitHub">
+                        <span>Github</span>
+                    </a>
+                </div>
+            </div>
+            <!-- Bottom Row -->
+            <div class="footer-bottom-row">
+                <div class="footer-name-container">
+                    <p class="footer-name">Andrés Rodríguez G.</p>
+                    <p class="footer-title">UX/UI Creative Designer</p>
+                </div>
+                <div class="footer-copyright">
+                    <p>2025 All Rights Reserved®</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="mobile-menu.js"></script>
+    <script src="footer-parallax.js"></script>
+</body>
+</html>
+

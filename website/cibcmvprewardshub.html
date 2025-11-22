@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIBC MVP Rewards Hub Case Study | Andrés Rodríguez G.</title>
+    <meta name="description" content="Case study: Designing CIBC's MVP Rewards Hub to modernize the rewards experience and align with credit card team's loyalty goals. UX/UI design by Andrés Rodríguez G.">
+    <meta name="keywords" content="CIBC, Rewards Hub, UX Case Study, UI Case Study, Banking Design, Andrés Rodríguez">
+    <meta name="author" content="Andrés Rodríguez G.">
+    <meta property="og:title" content="CIBC MVP Rewards Hub Case Study | Andrés Rodríguez G.">
+    <meta property="og:description" content="Case study: Designing CIBC's MVP Rewards Hub to modernize the rewards experience.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://andresrodriguez.net/cibcmvprewardshub.html">
+    <link rel="canonical" href="https://andresrodriguez.net/cibcmvprewardshub.html">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7CY5G9TNG4"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-7CY5G9TNG4');
+    </script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=Space+Mono:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section - Reusable Nav Component -->
+    <header class="detail-page-header">
+        <nav class="nav-bar">
+            <div class="nav-left">
+                <div class="avatar">
+                    <img src="assets/avatar-andresr.png" alt="Andrés Rodríguez G.">
+                </div>
+                <div class="nav-title">
+                    <p class="name">Andrés Rodríguez G.</p>
+                    <p class="title">UX/UI Creative Designer</p>
+                </div>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-menu-item">
+                    <img src="assets/icon-about me.png" alt="About me">
+                    <span>About Me</span>
+                </a>
+                <a href="portfolio.html" class="nav-menu-item">
+                    <img src="assets/icon-portfolio.png" alt="Portfolio">
+                    <span>Portfolio</span>
+                </a>
+                <a href="references.html" class="nav-menu-item">
+                    <img src="assets/icon-references.png" alt="References">
+                    <span>References</span>
+                </a>
+            </div>
+            <button class="mobile-menu-button" id="mobileMenuButton" aria-label="Toggle menu">
+                <span class="hamburger-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+                <span class="menu-label">Menu</span>
+            </button>
+        </nav>
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+            <div class="mobile-menu-content">
+                <a href="index.html" class="mobile-menu-item">
+                    <img src="assets/icon-about me.png" alt="About me">
+                    <span>About Me</span>
+                </a>
+                <a href="portfolio.html" class="mobile-menu-item">
+                    <img src="assets/icon-portfolio.png" alt="Portfolio">
+                    <span>Portfolio</span>
+                </a>
+                <a href="references.html" class="mobile-menu-item">
+                    <img src="assets/icon-references.png" alt="References">
+                    <span>References</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content - Detail Page Sections -->
+    <main class="detail-page-main">
+        <div class="detail-page-container">
+            <!-- Main Section 01: Problem Statement, My Team, Hero Image, Super Powers -->
+            <section class="detail-section">
+                <div class="detail-section-two-column">
+                    <div class="detail-section-col">
+                        <h2 class="detail-section-subtitle" style="font-size: 20px; font-weight: 700; margin-bottom: var(--tokens-spacing-3);">Problem Statement</h2>
+                        <p class="detail-section-text">
+                            The experience within CIBC Rewards site is standardized and appears generic to clients, resulting in a disconnect between the Rewards program and the consumer due to design and experience choices. The CIBC Rewards Hub will address the existing challenges and create new opportunities through a modernized, scalable and streamlined experience that clients will be delighted with.
+                        </p>
+                    </div>
+                    <div class="detail-section-col">
+                        <h2 class="detail-section-subtitle" style="font-size: 20px; font-weight: 700; margin-bottom: var(--tokens-spacing-3);">My Team</h2>
+                        <div class="detail-section-text">
+                            <p style="margin: 0 0 8px 0;">Product Owner</p>
+                            <p style="margin: 0 0 8px 0;">Business Analyst</p>
+                            <p style="margin: 0 0 8px 0;">Visual Designer (me!)</p>
+                            <p style="margin: 0 0 8px 0;">UX Researcher</p>
+                            <p style="margin: 0;">Behavioural Science Expert</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-section-image" style="margin: var(--tokens-spacing-8) 0;">
+                    <img src="assets/cibcHeroBanner.png" alt="CIBC MVP Rewards Hub Hero">
+                </div>
+                <div class="detail-section-col">
+                    <h2 class="detail-section-subtitle" style="font-size: 20px; font-weight: 700; margin-bottom: var(--tokens-spacing-3);">Super Powers</h2>
+                    <div class="skills-container">
+                        <span class="skill-tag">Design Thinking</span>
+                        <span class="skill-tag">Discovery</span>
+                        <span class="skill-tag">Interaction Design</span>
+                        <span class="skill-tag">UI Design</span>
+                        <span class="skill-tag">Prototyping</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Discovery and Design Methods Section -->
+            <section class="detail-section">
+                <h2 class="detail-section-title" style="font-size: 36px; font-weight: 400; margin-bottom: var(--tokens-spacing-10);">Discovery and Design Methods</h2>
+                <div class="detail-section-two-column">
+                    <div class="detail-section-col">
+                        <h3 class="detail-section-subtitle" style="font-size: 20px; font-weight: 700; margin-bottom: var(--tokens-spacing-3);">Problem Statement Definition</h3>
+                        <p class="detail-section-text">
+                            We began by empathizing with core users to uncover their pain points and translate those insights into actionable design principles. This ensured our solutions were grounded in real user needs from the start.
+                        </p>
+                    </div>
+                    <div class="detail-section-col">
+                        <h3 class="detail-section-subtitle" style="font-size: 20px; font-weight: 700; margin-bottom: var(--tokens-spacing-3);">Behavioural Science Analysis</h3>
+                        <p class="detail-section-text">
+                            Using behavioural science insights, we identified key motivators and patterns to drive engagement and revenue. Techniques like gamification, personalization, and intuitive navigation shaped a more rewarding user experience.
+                        </p>
+                    </div>
+                    <div class="detail-section-col">
+                        <h3 class="detail-section-subtitle" style="font-size: 20px; font-weight: 700; margin-bottom: var(--tokens-spacing-3);">Low + High fidelity Wireframes</h3>
+                        <p class="detail-section-text">
+                            Through iterative prototyping, from early Proofs of Concept to refined wireframes, we explored what was technically and practically possible within time and resource constraints. Each iteration helped validate ideas and sharpen usability.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Guiding Principles Section -->
+            <section class="detail-section">
+                <h2 class="detail-section-title" style="font-size: 36px; font-weight: 400; margin-bottom: var(--tokens-spacing-6);">Guiding Principles</h2>
+                <div class="detail-section-col" style="max-width: 600px; margin-bottom: var(--tokens-spacing-10);">
+                    <p class="detail-section-text">
+                        Design principles are the fundamental guidelines that shape how products are conceived, structured, and experienced. They serve as a shared compass for the team—anchoring creative exploration in clarity and purpose. By defining these principles, we establish criteria for decision-making, ensuring coherence and intentionality across all design choices.
+                    </p>
+                </div>
+                <div class="detail-section-image">
+                    <img src="assets/cibcGuidingPrinciples.png" alt="Guiding Principles">
+                </div>
+            </section>
+
+            <!-- Discovery Workshops Section -->
+            <section class="detail-section">
+                <p class="detail-section-text" style="font-size: 16px; color: var(--colors-slate-800); margin-bottom: var(--tokens-spacing-8);">
+                    Numerous discovery and design workshops to define current state and fully scope the future state
+                </p>
+                <div class="detail-workshop-container">
+                    <div class="detail-section-two-column">
+                        <div class="detail-section-col">
+                            <h3 class="detail-section-subtitle" style="font-size: 20px; font-weight: 700; margin-bottom: var(--tokens-spacing-3);">Current state evaluation</h3>
+                            <div class="detail-workshop-image">
+                                <img src="assets/cibcWorkshopsScreenshot.png" alt="Current state evaluation">
+                            </div>
+                        </div>
+                        <div class="detail-section-col">
+                            <h3 class="detail-section-subtitle" style="font-size: 20px; font-weight: 700; margin-bottom: var(--tokens-spacing-3);">Capabilities prioritization workshop</h3>
+                            <div class="detail-workshop-image">
+                                <img src="assets/cibcWorkshopsScreenshot.png" alt="Capabilities prioritization workshop">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail-section-two-column">
+                        <div class="detail-section-col">
+                            <h3 class="detail-section-subtitle" style="font-size: 20px; font-weight: 700; margin-bottom: var(--tokens-spacing-3);">Current state evaluation</h3>
+                            <div class="detail-workshop-image">
+                                <img src="assets/cibcWorkshopsScreenshot.png" alt="Current state evaluation">
+                            </div>
+                        </div>
+                        <div class="detail-section-col">
+                            <h3 class="detail-section-subtitle" style="font-size: 20px; font-weight: 700; margin-bottom: var(--tokens-spacing-3);">Behavioural Science research</h3>
+                            <div class="detail-workshop-image">
+                                <img src="assets/cibcWorkshopsScreenshot.png" alt="Behavioural Science research">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Experience Strategy Section -->
+            <section class="detail-section">
+                <h2 class="detail-section-title" style="font-size: 36px; font-weight: 400; margin-bottom: var(--tokens-spacing-3);">Experience Strategy</h2>
+                <p class="detail-section-text" style="margin-bottom: var(--tokens-spacing-8);">
+                    We applied our design principles, usability heuristics, and key strategic focus areas (gamification, personalization, tokenization, etc…) to evaluate and benchmark CIBC's digital experience against main competitors, identifying areas where design improvements could deliver greater value for both the business and its customers.
+                </p>
+                <div class="detail-section-image" style="background-color: #f2f3f2; padding: 24px; border-radius: 10px;">
+                    <img src="assets/cibcCompetitiveAnalysis.png" alt="Experience Strategy">
+                </div>
+            </section>
+
+            <!-- Sitemap and Wireframes Section -->
+            <section class="detail-section">
+                <div class="detail-section-two-column">
+                    <div class="detail-section-col">
+                        <h3 class="detail-section-subtitle" style="font-size: 20px; font-weight: 700; margin-bottom: var(--tokens-spacing-3);">Sitemap, building the future state</h3>
+                        <p class="detail-section-text">
+                            We identified all the systems involved in the experience and mapped the architecture needed to define a clear hierarchy, establishing a navigation structure that felt intuitive and aligned with user expectations.
+                        </p>
+                    </div>
+                    <div class="detail-section-col">
+                        <div class="detail-section-image" style="background-color: #f2f3f2; padding: 10px; border-radius: 10px;">
+                            <img src="assets/cibcDoc01.png" alt="Sitemap">
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-section-two-column">
+                    <div class="detail-section-col">
+                        <h3 class="detail-section-subtitle" style="font-size: 20px; font-weight: 700; margin-bottom: var(--tokens-spacing-3);">Low + High fidelity Wireframes</h3>
+                        <p class="detail-section-text">
+                            Exploring the art of the possible helped us focus on what truly mattered—defining the features and moments that created the most impact for both customers and the business. Rapid proof-of-concept prototypes allowed us to test and refine layouts early, turning abstract strategy into tangible design direction.
+                        </p>
+                    </div>
+                    <div class="detail-section-col">
+                        <div class="detail-section-image" style="background-color: #f2f3f2; padding: 10px; border-radius: 10px;">
+                            <img src="assets/cibcDoc02.png" alt="Wireframes">
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-section-two-column">
+                    <div class="detail-section-col">
+                        <h3 class="detail-section-subtitle" style="font-size: 20px; font-weight: 700; margin-bottom: var(--tokens-spacing-3);">Interaction Design Documentation</h3>
+                        <p class="detail-section-text">
+                            Identifying all the systems involved in the process while mapping the architecture for the hierarchy structure needed to
+                        </p>
+                    </div>
+                    <div class="detail-section-col">
+                        <div class="detail-section-image" style="background-color: #f2f3f2; padding: 10px; border-radius: 10px;">
+                            <img src="assets/cibcDoc03.png" alt="Interaction Design Documentation">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Mobile UI Screens Section -->
+            <section class="detail-section">
+                <div class="detail-section-col" style="max-width: 800px; margin-bottom: var(--tokens-spacing-6);">
+                    <p class="detail-section-text">
+                        We applied our design principles, usability heuristics, and key business KPIs to evaluate and benchmark CIBC's digital experience against main competitors. This process helped us identify where the brand currently stood and uncover design opportunities that could deliver greater value to both the business and its customers.
+                    </p>
+                    <p class="detail-section-text" style="margin-top: var(--tokens-spacing-3);">
+                        The insights gathered from this analysis translated into several design decisions—such as making thoughtful use of space, optimizing layouts creatively, and ensuring that essential content like total miles, redemption options, and ways to use points remained visible and accessible. The redesigned experience aimed to keep customers engaged as they explored new redemption opportunities, while motivating them to reach their next milestones—ultimately reinforcing brand engagement, loyalty, and long-term retention.
+                    </p>
+                </div>
+                <div class="detail-mobile-showcase" style="background-color: #f2f3f2; padding: 24px; border-radius: 10px; margin-bottom: var(--tokens-spacing-8);">
+                    <div class="detail-mobile-grid">
+                        <img src="assets/cibcMobileIterations.png" alt="Mobile screen 1">
+                        <img src="assets/cibcMobileIterations.png" alt="Mobile screen 2">
+                        <img src="assets/cibcMobileIterations.png" alt="Mobile screen 3">
+                        <img src="assets/cibcMobileIterations.png" alt="Mobile screen 4">
+                        <img src="assets/cibcMobileIterations.png" alt="Mobile screen 5">
+                        <img src="assets/cibcMobileIterations.png" alt="Mobile screen 6">
+                        <img src="assets/cibcMobileIterations.png" alt="Mobile screen 7">
+                    </div>
+                </div>
+                <div class="detail-section-image" style="background-color: #c41f3e; padding: 24px; border-radius: 10px; margin-bottom: var(--tokens-spacing-8);">
+                    <img src="assets/cibcMobileHero.png" alt="Mobile mockups v1-v3">
+                </div>
+                <div class="detail-section-image" style="background-color: #2d2e35; padding: 24px; border-radius: 10px; margin-bottom: var(--tokens-spacing-8);">
+                    <img src="assets/cibcMobileFlows.png" alt="Mobile wireframes">
+                </div>
+            </section>
+
+            <!-- Results and Impact Section -->
+            <section class="detail-section">
+                <h2 class="detail-section-title" style="font-size: 36px; font-weight: 400; margin-bottom: var(--tokens-spacing-6);">Results and Impact</h2>
+                <div class="detail-section-col" style="max-width: 800px; margin-bottom: var(--tokens-spacing-8);">
+                    <p class="detail-section-text">
+                        The final solution successfully unified business priorities and user needs into a single, engaging experience. By grounding every decision in strategy and validation, we delivered a design system that enhances usability, drives engagement, and strengthens long-term loyalty. The mockups and core flow illustrate how simplicity and motivation work hand in hand to elevate the overall brand experience.
+                    </p>
+                </div>
+                <div class="detail-section-image" style="background-color: #2d2e35; padding: 24px; border-radius: 10px; margin-bottom: var(--tokens-spacing-8);">
+                    <img src="assets/cibcDesktopIterations.png" alt="Results and Impact">
+                </div>
+                <div class="detail-section-image" style="background-color: #c41f3e; padding: 24px; border-radius: 10px;">
+                    <img src="assets/cibcFinalProduct.png" alt="Final mockup">
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer - Parallax Footer Component -->
+    <footer class="footer-parallax" id="footerParallax">
+        <div class="footer-parallax-content">
+            <!-- Top Row -->
+            <div class="footer-top-row">
+                <div class="footer-heading-container">
+                    <h2 class="footer-heading">
+                        <span>Let's start</span>
+                        <span>creating together</span>
+                    </h2>
+                    <a href="mailto:iam@andresrodriguez.net" class="footer-cta-button" onclick="gtag('event', 'click', {'event_category': 'Contact', 'event_label': 'Email CTA'});">Let's Talk</a>
+                </div>
+                <div class="footer-social-links">
+                    <a href="https://www.linkedin.com/in/andresfrodriguez" class="footer-social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer" onclick="gtag('event', 'click', {'event_category': 'Social', 'event_label': 'LinkedIn Footer'});">
+                        <img src="assets/LinkedIn.svg" alt="LinkedIn">
+                        <span>Linkedin</span>
+                    </a>
+                    <a href="https://www.behance.net/andresrodriguez28" class="footer-social-link" aria-label="Behance" target="_blank" rel="noopener noreferrer" onclick="gtag('event', 'click', {'event_category': 'Social', 'event_label': 'Behance Footer'});">
+                        <img src="assets/Behance.svg" alt="Behance">
+                        <span>Behance</span>
+                    </a>
+                    <a href="https://github.com/andresrod24" class="footer-social-link" aria-label="GitHub" target="_blank" rel="noopener noreferrer" onclick="gtag('event', 'click', {'event_category': 'Social', 'event_label': 'GitHub Footer'});">
+                        <img src="assets/GitHub.svg" alt="GitHub">
+                        <span>Github</span>
+                    </a>
+                </div>
+            </div>
+            <!-- Bottom Row -->
+            <div class="footer-bottom-row">
+                <div class="footer-name-container">
+                    <p class="footer-name">Andrés Rodríguez G.</p>
+                    <p class="footer-title">UX/UI Creative Designer</p>
+                </div>
+                <div class="footer-copyright">
+                    <p>2025 All Rights Reserved®</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="mobile-menu.js"></script>
+    <script src="footer-parallax.js"></script>
+</body>
+</html>

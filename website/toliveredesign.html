@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO Live Website Redesign Case Study | Andrés Rodríguez G.</title>
+    <meta name="description" content="Case study: Redesigning TO Live's website to increase discoverability of artists and events, reduce visual clutter, and improve conversions. UX/UI design by Andrés Rodríguez G.">
+    <meta name="keywords" content="TO Live, Website Redesign, UX Case Study, UI Case Study, Arts Organization Design, Andrés Rodríguez">
+    <meta name="author" content="Andrés Rodríguez G.">
+    <meta property="og:title" content="TO Live Website Redesign Case Study | Andrés Rodríguez G.">
+    <meta property="og:description" content="Case study: Redesigning TO Live's website to increase discoverability and improve conversions.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://andresrodriguez.net/toliveredesign.html">
+    <link rel="canonical" href="https://andresrodriguez.net/toliveredesign.html">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7CY5G9TNG4"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-7CY5G9TNG4');
+    </script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=Space+Mono:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section - Reusable Nav Component -->
+    <header class="detail-page-header">
+        <nav class="nav-bar">
+            <div class="nav-left">
+                <div class="avatar">
+                    <img src="assets/avatar-andresr.png" alt="Andrés Rodríguez G.">
+                </div>
+                <div class="nav-title">
+                    <p class="name">Andrés Rodríguez G.</p>
+                    <p class="title">UX/UI Creative Designer</p>
+                </div>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-menu-item">
+                    <img src="assets/icon-about me.png" alt="About me">
+                    <span>About Me</span>
+                </a>
+                <a href="portfolio.html" class="nav-menu-item">
+                    <img src="assets/icon-portfolio.png" alt="Portfolio">
+                    <span>Portfolio</span>
+                </a>
+                <a href="references.html" class="nav-menu-item">
+                    <img src="assets/icon-references.png" alt="References">
+                    <span>References</span>
+                </a>
+            </div>
+            <button class="mobile-menu-button" id="mobileMenuButton" aria-label="Toggle menu">
+                <span class="hamburger-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+                <span class="menu-label">Menu</span>
+            </button>
+        </nav>
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+            <div class="mobile-menu-content">
+                <a href="index.html" class="mobile-menu-item">
+                    <img src="assets/icon-about me.png" alt="About me">
+                    <span>About Me</span>
+                </a>
+                <a href="portfolio.html" class="mobile-menu-item">
+                    <img src="assets/icon-portfolio.png" alt="Portfolio">
+                    <span>Portfolio</span>
+                </a>
+                <a href="references.html" class="mobile-menu-item">
+                    <img src="assets/icon-references.png" alt="References">
+                    <span>References</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content - Detail Page Sections -->
+    <main class="detail-page-main">
+        <div class="detail-page-container">
+            <!-- Hero Section: Problem Statement, My Team, Hero Image, Super Powers -->
+            <section class="detail-section">
+                <div class="detail-section-two-column">
+                    <div class="detail-section-col">
+                        <h2 class="detail-section-subtitle" style="font-size: 20px; font-weight: 700; margin-bottom: var(--tokens-spacing-3);">Problem Statement</h2>
+                        <p class="detail-section-text">
+                            Website re-design: Increased discoverability of artists/events and documentation items. Reduced visual clutter which lead to increased conversions on tickets purchase and events and venues booking.
+                        </p>
+                    </div>
+                    <div class="detail-section-col">
+                        <h2 class="detail-section-subtitle" style="font-size: 20px; font-weight: 700; margin-bottom: var(--tokens-spacing-3);">My Team</h2>
+                        <div class="detail-section-text">
+                            <p style="margin: 0 0 8px 0;">Product Owner</p>
+                            <p style="margin: 0 0 8px 0;">Business Analyst</p>
+                            <p style="margin: 0 0 8px 0;">Product Designer (me!)</p>
+                            <p style="margin: 0;">UX Researcher</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-section-image" style="margin: var(--tokens-spacing-8) 0;">
+                    <img src="assets/tolive-herocasestudy.png" alt="TO Live Hero Case Study">
+                </div>
+                <div class="detail-section-col">
+                    <h2 class="detail-section-subtitle" style="font-size: 20px; font-weight: 700; margin-bottom: var(--tokens-spacing-3);">Super Powers</h2>
+                    <div class="skills-container">
+                        <span class="skill-tag">Art Direction</span>
+                        <span class="skill-tag">Wireframes</span>
+                        <span class="skill-tag">User Experience</span>
+                        <span class="skill-tag">UI Design</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Wireframes Section -->
+            <section class="detail-section">
+                <h2 class="detail-section-title" style="font-size: 36px; font-weight: 400; margin-bottom: var(--tokens-spacing-6);">Wireframes</h2>
+                <p class="detail-section-text" style="margin-bottom: var(--tokens-spacing-10);">
+                    Wireframing played a key role in aligning with the client on the overall structure before diving into details. This process helped define the sitemap and establish a clear, intuitive URL structure ensuring both, business objectives and user needs were aligned from the start.
+                </p>
+                <div class="detail-section-image">
+                    <img src="assets/tolive-wireframes.jpg" alt="TO Live Wireframes">
+                </div>
+            </section>
+
+            <!-- Navigation Section -->
+            <section class="detail-section">
+                <h2 class="detail-section-title" style="font-size: 36px; font-weight: 400; margin-bottom: var(--tokens-spacing-6);">Navigation</h2>
+                <p class="detail-section-text" style="margin-bottom: var(--tokens-spacing-10);">
+                    To Live is a non-profit organization that manages 3 different venues to support artist and art events across Toronto. Their original navigation was extensive and had plenty of duplicates. The amalgamation and simplification of their navigation were one of the main challenges.
+                </p>
+                <div class="detail-section-image">
+                    <img src="assets/tolive-navigation.jpg" alt="TO Live Navigation">
+                </div>
+            </section>
+
+            <!-- Search Section -->
+            <section class="detail-section">
+                <h2 class="detail-section-title" style="font-size: 36px; font-weight: 400; margin-bottom: var(--tokens-spacing-10);">
+                    When searching in a wide set of categories, types of events, artists names, <strong>simplifying the search process</strong> was a crucial feature that directly impacted their front line business, selling tickets and booking events/venues.
+                </h2>
+                <div class="detail-section-image" style="margin-bottom: var(--tokens-spacing-10);">
+                    <img src="assets/tolive-searchdesktop.jpg" alt="TO Live Search Desktop">
+                </div>
+                <div class="detail-section-two-column" style="grid-template-columns: repeat(3, 1fr);">
+                    <div class="detail-section-col">
+                        <p class="detail-section-text" style="margin-bottom: var(--tokens-spacing-8);">
+                            Friendly Prediction + passive suggestions when searching were meant to speed up the search process giving the high amount of options the user may face when searching for a particular category.
+                        </p>
+                        <div class="detail-section-image">
+                            <img src="assets/tolive-mobile01.jpg" alt="TO Live Mobile Search 1">
+                        </div>
+                    </div>
+                    <div class="detail-section-col">
+                        <p class="detail-section-text" style="margin-bottom: var(--tokens-spacing-8);">
+                            Incorporating date range selection along with pre-defined options like "today" or "tomorrow" expedites search flow by swiftly narrowing down choices.
+                        </p>
+                        <div class="detail-section-image">
+                            <img src="assets/tolive-mobile02.jpg" alt="TO Live Mobile Search 2">
+                        </div>
+                    </div>
+                    <div class="detail-section-col">
+                        <p class="detail-section-text" style="margin-bottom: var(--tokens-spacing-8);">
+                            Implementing tailored filters based on TOLive's data analysis improves search accuracy, saving time and enhancing precision for users.
+                        </p>
+                        <div class="detail-section-image">
+                            <img src="assets/tolive-mobile03.jpg" alt="TO Live Mobile Search 3">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Layout Flexibility Section -->
+            <section class="detail-section">
+                <h2 class="detail-section-title" style="font-size: 36px; font-weight: 400; margin-bottom: var(--tokens-spacing-6);">Layout Flexibility</h2>
+                <p class="detail-section-text" style="margin-bottom: var(--tokens-spacing-10);">
+                    Responsivenes and minimalistic design allow this website to display a structure that is customizable throught a headless CMS to innovate when creating new pages for artist, events, podcasts or stories while maintaing the asthetics and consistency in visual terms.
+                </p>
+                <div class="detail-section-image">
+                    <img src="assets/tolive-layoutflexibility.jpg" alt="TO Live Layout Flexibility">
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer - Reusable Footer Component with Next Project Link -->
+    <!-- Footer - Parallax Footer Component -->
+    <footer class="footer-parallax" id="footerParallax">
+        <div class="footer-parallax-content">
+            <!-- Top Row -->
+            <div class="footer-top-row">
+                <div class="footer-heading-container">
+                    <h2 class="footer-heading">
+                        <span>Let's start</span>
+                        <span>creating together</span>
+                    </h2>
+                    <a href="mailto:iam@andresrodriguez.net" class="footer-cta-button" onclick="gtag('event', 'click', {'event_category': 'Contact', 'event_label': 'Email CTA'});">Let's Talk</a>
+                </div>
+                <div class="footer-social-links">
+                    <a href="https://www.linkedin.com/in/andresfrodriguez" class="footer-social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer" onclick="gtag('event', 'click', {'event_category': 'Social', 'event_label': 'LinkedIn Footer'});">
+                        <img src="assets/LinkedIn.svg" alt="LinkedIn">
+                        <span>Linkedin</span>
+                    </a>
+                    <a href="https://www.behance.net/andresrodriguez28" class="footer-social-link" aria-label="Behance" target="_blank" rel="noopener noreferrer" onclick="gtag('event', 'click', {'event_category': 'Social', 'event_label': 'Behance Footer'});">
+                        <img src="assets/Behance.svg" alt="Behance">
+                        <span>Behance</span>
+                    </a>
+                    <a href="https://github.com/andresrod24" class="footer-social-link" aria-label="GitHub" target="_blank" rel="noopener noreferrer" onclick="gtag('event', 'click', {'event_category': 'Social', 'event_label': 'GitHub Footer'});">
+                        <img src="assets/GitHub.svg" alt="GitHub">
+                        <span>Github</span>
+                    </a>
+                </div>
+            </div>
+            <!-- Bottom Row -->
+            <div class="footer-bottom-row">
+                <div class="footer-name-container">
+                    <p class="footer-name">Andrés Rodríguez G.</p>
+                    <p class="footer-title">UX/UI Creative Designer</p>
+                </div>
+                <div class="footer-copyright">
+                    <p>2025 All Rights Reserved®</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="mobile-menu.js"></script>
+    <script src="footer-parallax.js"></script>
+</body>
+</html>
+
