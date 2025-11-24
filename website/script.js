@@ -7,9 +7,17 @@
                     window.location.hostname === '';
     
     if (isLocal) {
+        // Case study page mappings
+        const caseStudyPages = {
+            '/cibcmvprewardshub': '/cibcmvprewardshub.html',
+            '/shipmentrackuseradoption': '/shipmentrackuseradoption.html',
+            '/toliveredesign': '/toliveredesign.html',
+            '/mlsetradenfs': '/mlsetradenfs.html'
+        };
+        
         // Intercept navigation clicks and fix URLs
         document.addEventListener('click', function(e) {
-            const link = e.target.closest('a[href="/"], a[href="/portfolio"], a[href="/references"]');
+            const link = e.target.closest('a[href="/"], a[href="/portfolio"], a[href="/references"], a[href="/cibcmvprewardshub"], a[href="/shipmentrackuseradoption"], a[href="/toliveredesign"], a[href="/mlsetradenfs"]');
             if (link) {
                 const href = link.getAttribute('href');
                 if (href === '/') {
@@ -21,13 +29,16 @@
                 } else if (href === '/references') {
                     e.preventDefault();
                     window.location.href = '/references.html';
+                } else if (caseStudyPages[href]) {
+                    e.preventDefault();
+                    window.location.href = caseStudyPages[href];
                 }
             }
         });
         
         // Also update href attributes for better UX (shows correct URL on hover)
         function updateNavLinks() {
-            const navLinks = document.querySelectorAll('a[href="/"], a[href="/portfolio"], a[href="/references"]');
+            const navLinks = document.querySelectorAll('a[href="/"], a[href="/portfolio"], a[href="/references"], a[href="/cibcmvprewardshub"], a[href="/shipmentrackuseradoption"], a[href="/toliveredesign"], a[href="/mlsetradenfs"]');
             navLinks.forEach(link => {
                 const href = link.getAttribute('href');
                 if (href === '/') {
@@ -36,6 +47,8 @@
                     link.setAttribute('href', '/portfolio.html');
                 } else if (href === '/references') {
                     link.setAttribute('href', '/references.html');
+                } else if (caseStudyPages[href]) {
+                    link.setAttribute('href', caseStudyPages[href]);
                 }
             });
         }
