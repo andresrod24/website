@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found | Andrés Rodríguez G.</title>
+    <meta name="description" content="Page not found - Andrés Rodríguez G. UX/UI Creative Designer">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="canonical" href="https://andresrodriguez.net/404">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7CY5G9TNG4"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-7CY5G9TNG4');
+    </script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=Space+Mono:wght@400;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="not-found">
+    <!-- Navigation Bar -->
+    <nav class="nav-bar">
+        <div class="nav-left">
+            <div class="avatar">
+                <img src="assets/avatar-andresr.png" alt="Andrés Rodríguez G.">
+            </div>
+            <div class="nav-title">
+                <p class="name">Andrés Rodríguez G.</p>
+                <p class="title">UX/UI Creative Designer</p>
+            </div>
+        </div>
+        <div class="nav-menu">
+            <a href="/" class="nav-menu-item">
+                <img src="assets/icon-about me.png" alt="About me">
+                <span>About Me</span>
+            </a>
+            <a href="/portfolio" class="nav-menu-item">
+                <img src="assets/icon-portfolio.png" alt="Portfolio">
+                <span>Portfolio</span>
+            </a>
+            <a href="/references" class="nav-menu-item">
+                <img src="assets/icon-references.png" alt="References">
+                <span>References</span>
+            </a>
+        </div>
+        <button class="mobile-menu-button" id="mobileMenuButton" aria-label="Toggle menu">
+            <span class="hamburger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+            <span class="menu-label">Menu</span>
+        </button>
+    </nav>
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+        <div class="mobile-menu-content">
+            <a href="/" class="mobile-menu-item">
+                <img src="assets/icon-about me.png" alt="About me">
+                <span>About Me</span>
+            </a>
+            <a href="/portfolio" class="mobile-menu-item">
+                <img src="assets/icon-portfolio.png" alt="Portfolio">
+                <span>Portfolio</span>
+            </a>
+            <a href="/references" class="mobile-menu-item">
+                <img src="assets/icon-references.png" alt="References">
+                <span>References</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- 404 Content -->
+    <div class="container-404">
+        <h1>404</h1>
+        <h2>This page doesn't exist (yet).</h2>
+        <p>
+            You might have followed an outdated link or mistyped the URL.
+            Let's get you back to something more interesting.
+        </p>
+        <a href="/" class="btn-primary">Back to home</a>
+    </div>
+
+    <!-- Footer - Parallax Footer Component -->
+    <footer class="footer-parallax" id="footerParallax">
+        <div class="footer-parallax-content">
+            <!-- Top Row -->
+            <div class="footer-top-row">
+                <div class="footer-heading-container">
+                    <h2 class="footer-heading">
+                        <span>Let's start</span>
+                        <span>creating together</span>
+                    </h2>
+                    <a href="mailto:iam@andresrodriguez.net" class="footer-cta-button" onclick="gtag('event', 'click', {'event_category': 'Contact', 'event_label': 'Email CTA'});">Let's Talk</a>
+                </div>
+                <div class="footer-social-links">
+                    <a href="https://www.linkedin.com/in/andresfrodriguez" class="footer-social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer" onclick="gtag('event', 'click', {'event_category': 'Social', 'event_label': 'LinkedIn Footer'});">
+                        <img src="assets/LinkedIn.svg" alt="LinkedIn">
+                        <span>Linkedin</span>
+                    </a>
+                    <a href="https://www.behance.net/andresrodriguez28" class="footer-social-link" aria-label="Behance" target="_blank" rel="noopener noreferrer" onclick="gtag('event', 'click', {'event_category': 'Social', 'event_label': 'Behance Footer'});">
+                        <img src="assets/Behance.svg" alt="Behance">
+                        <span>Behance</span>
+                    </a>
+                    <a href="https://github.com/andresrod24" class="footer-social-link" aria-label="GitHub" target="_blank" rel="noopener noreferrer" onclick="gtag('event', 'click', {'event_category': 'Social', 'event_label': 'GitHub Footer'});">
+                        <img src="assets/GitHub.svg" alt="GitHub">
+                        <span>Github</span>
+                    </a>
+                </div>
+            </div>
+            <!-- Bottom Row -->
+            <div class="footer-bottom-row">
+                <div class="footer-name-container">
+                    <p class="footer-name">Andrés Rodríguez G.</p>
+                    <p class="footer-title">UX/UI Creative Designer</p>
+                </div>
+                <div class="footer-copyright">
+                    <p>2025 All Rights Reserved®</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="mobile-menu.js"></script>
+    <script src="footer-parallax.js"></script>
+</body>
+</html>
+

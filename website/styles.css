@@ -2172,4 +2172,103 @@ html.portfolio-page body {
         gap: 12px;
     }
 }
+
+/* 404 Page Styles */
+body.not-found {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container-404 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: var(--tokens-spacing-16, 64px) var(--tokens-spacing-8, 32px);
+    flex: 1;
+    max-width: 800px;
+    margin: 0 auto;
+    gap: var(--tokens-spacing-8, 32px);
+}
+
+.container-404 h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 120px;
+    line-height: 1;
+    color: var(--colors-slate-900);
+    margin: 0;
+}
+
+.container-404 h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: var(--tokens-fontsize-3xl, 30px);
+    line-height: 40px;
+    color: var(--colors-slate-900);
+    margin: 0;
+}
+
+.container-404 p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: var(--tokens-fontsize-xl, 20px);
+    line-height: 32px;
+    color: var(--colors-slate-600);
+    margin: 0;
+    max-width: 600px;
+}
+
+.btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--tokens-spacing-3, 12px) var(--tokens-spacing-6, 24px);
+    background-color: var(--colors-blue-600, #2563eb);
+    color: #f5f5f5;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: var(--tokens-fontsize-xl, 20px);
+    line-height: 28px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    white-space: nowrap;
+    margin-top: var(--tokens-spacing-6, 24px);
+}
+
+.btn-primary:hover {
+    background-color: var(--colors-blue-700, #1d4ed8);
+}
+
+/* 404 Page Responsive */
+@media (max-width: 768px) {
+    .container-404 {
+        padding: var(--tokens-spacing-12, 48px) var(--tokens-spacing-6, 24px);
+        gap: var(--tokens-spacing-6, 24px);
+    }
+
+    .container-404 h1 {
+        font-size: 80px;
+    }
+
+    .container-404 h2 {
+        font-size: var(--tokens-fontsize-xl, 20px);
+        line-height: 28px;
+    }
+
+    .container-404 p {
+        font-size: var(--tokens-fontsize-base, 16px);
+        line-height: 24px;
+    }
+
+    .btn-primary {
+        font-size: var(--tokens-fontsize-base, 16px);
+        padding: var(--tokens-spacing-2, 8px) var(--tokens-spacing-4, 16px);
+    }
+}
   
