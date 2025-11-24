@@ -203,7 +203,7 @@ body {
 }
 
 .mobile-menu-button.active .hamburger-icon span:nth-child(1) {
-    transform: rotate(45deg) translate(6px, 6px);
+    transform: rotate(45deg) translate(7px, 7px);
 }
 
 .mobile-menu-button.active .hamburger-icon span:nth-child(2) {
@@ -211,7 +211,7 @@ body {
 }
 
 .mobile-menu-button.active .hamburger-icon span:nth-child(3) {
-    transform: rotate(-45deg) translate(6px, -6px);
+    transform: rotate(-45deg) translate(7px, -7px);
 }
 
 .menu-label {
@@ -251,7 +251,7 @@ body {
     padding-top: 100px;
     display: flex;
     flex-direction: column;
-    gap: var(--tokens-spacing-4);
+    gap: var(--tokens-spacing-8);
     transform: translateX(100%);
     transition: transform 0.3s ease;
     box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
@@ -581,7 +581,7 @@ html.portfolio-page body {
 }
 
 .portfolio-heading-section {
-    padding: var(--tokens-spacing-8, 32px) var(--tokens-spacing-16, 64px);
+    padding: var(--tokens-spacing-8, 32px) clamp(16px, 2.41vw + 7.32px, 32px);
     border-bottom: 1px solid var(--colors-slate-300, #cbd5e1);
     display: flex;
     align-items: center;
@@ -611,7 +611,7 @@ html.portfolio-page body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: var(--tokens-spacing-8, 32px) var(--tokens-spacing-16, 64px);
+    padding: var(--tokens-spacing-8, 32px) clamp(16px, 2.41vw + 7.32px, 32px);
     background: none;
     border: none;
     border-bottom: 1px solid var(--colors-slate-300, #cbd5e1);
@@ -663,7 +663,7 @@ html.portfolio-page body {
 /* Project Sections */
 /* Reusable Project Section - Case Study Cards */
 .project-section {
-    padding: var(--tokens-spacing-16);
+    padding: var(--tokens-spacing-16) clamp(16px, 2.41vw + 7.32px, 32px);
     display: flex;
     flex-direction: column;
     gap: var(--tokens-spacing-12);
@@ -999,7 +999,7 @@ html.portfolio-page body {
 .detail-page-main {
     background-color: var(--colors-slate-100);
     min-height: calc(100vh - 200px);
-    padding: var(--tokens-spacing-16);
+    padding: var(--tokens-spacing-16) clamp(16px, 2.41vw + 7.32px, 32px);
 }
 
 .detail-page-container {
@@ -1320,7 +1320,7 @@ html.portfolio-page body {
 .references-main {
     background-color: var(--colors-slate-100);
     min-height: calc(100vh - 200px);
-    padding: var(--tokens-spacing-16);
+    padding: var(--tokens-spacing-16) clamp(16px, 2.41vw + 7.32px, 32px);
 }
 
 .references-container {
@@ -1328,7 +1328,7 @@ html.portfolio-page body {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    padding: var(--tokens-spacing-10, 40px) 64px var(--tokens-spacing-14, 56px) 64px;
+    padding: var(--tokens-spacing-10, 40px) clamp(16px, 2.41vw + 7.32px, 32px) var(--tokens-spacing-14, 56px) clamp(16px, 2.41vw + 7.32px, 32px);
 }
 
 .references-heading-container {
@@ -1456,13 +1456,40 @@ html.portfolio-page body {
     .mobile-menu-button {
         display: flex;
     }
+
+    /* Responsive margins for hamburger button: 16px at 360px, 32px at 1024px */
+    /* Formula: 16px + (32-16) * ((width - 360) / (1024 - 360)) = 7.32px + 2.41vw */
+    .mobile-menu-button {
+        margin-right: clamp(16px, 2.41vw + 7.32px, 32px);
+    }
+
+    /* Responsive navbar margins: 16px at 360px, 32px at 1024px, 8px top/bottom */
+    .nav-bar {
+        padding: 8px clamp(16px, 2.41vw + 7.32px, 32px);
+    }
+
+    /* Avatar 70% size in mobile breakpoints (80px * 0.7 = 56px) */
+    .avatar {
+        width: 56px;
+        height: 56px;
+    }
+
+    .avatar img {
+        image-rendering: auto;
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+        transform: translateZ(0);
+        -webkit-transform: translateZ(0);
+    }
 }
+
+/* Responsive margins are handled by clamp() in the 1024px breakpoint above */
 
 @media (max-width: 768px) {
     .nav-bar {
         flex-direction: row;
         gap: var(--tokens-spacing-4);
-        padding: var(--tokens-spacing-4) var(--tokens-spacing-6);
+        /* Padding is handled in the responsive margin section above */
     }
 
     .nav-left {
@@ -1503,7 +1530,7 @@ html.portfolio-page body {
     }
 
     .project-section {
-        padding: var(--tokens-spacing-8);
+        padding: var(--tokens-spacing-8) clamp(16px, 2.41vw + 7.32px, 32px);
     }
 
     .footer-content {
@@ -1513,7 +1540,7 @@ html.portfolio-page body {
     }
 
     .references-container {
-        padding: var(--tokens-spacing-8, 32px) var(--tokens-spacing-6, 24px);
+        padding: var(--tokens-spacing-8, 32px) clamp(16px, 2.41vw + 7.32px, 32px);
     }
 
     .references-heading {
@@ -1527,7 +1554,7 @@ html.portfolio-page body {
     }
 
     .detail-page-main {
-        padding: var(--tokens-spacing-8);
+        padding: var(--tokens-spacing-8) clamp(16px, 2.41vw + 7.32px, 32px);
     }
 
     .detail-section-title {
@@ -1591,7 +1618,7 @@ html.portfolio-page body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 var(--tokens-spacing-16);
+    padding: 0 clamp(16px, 2.41vw + 7.32px, 32px);
     position: relative;
     z-index: 5;
 }
@@ -1654,7 +1681,7 @@ html.portfolio-page body {
 /* About Me Section - New Structure */
 .about-me-section {
     background-color: var(--colors-slate-100);
-    padding: 40px var(--tokens-spacing-16) var(--tokens-spacing-12);
+    padding: 40px clamp(16px, 2.41vw + 7.32px, 32px) var(--tokens-spacing-12);
     position: relative;
     z-index: 4;
 }
@@ -1739,10 +1766,9 @@ html.portfolio-page body {
 /* Reviews Section - New Structure */
 .reviews-section {
     background-color: var(--colors-slate-700, #334155);
-    padding: var(--tokens-spacing-12) var(--tokens-spacing-16);
-    min-height: 784px;
+    padding: var(--tokens-spacing-12) clamp(16px, 2.41vw + 7.32px, 32px);
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     position: relative;
     z-index: 3;
@@ -1756,8 +1782,7 @@ html.portfolio-page body {
     flex-direction: column;
     gap: var(--tokens-spacing-12, 48px);
     align-items: center;
-    justify-content: center;
-    height: 100%;
+    justify-content: flex-start;
 }
 
 .reviews-title {
@@ -1773,18 +1798,18 @@ html.portfolio-page body {
 .reviews-carousel-wrapper {
     width: 100%;
     position: relative;
-    overflow: hidden;
+    overflow: visible;
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-height: fit-content;
 }
 
 .reviews-carousel {
     display: flex;
     position: relative;
     width: 100%;
-    min-height: 400px; /* Minimum height, will be adjusted by JS */
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     overflow: hidden;
 }
@@ -1794,7 +1819,7 @@ html.portfolio-page body {
     width: 100%;
     flex-shrink: 0;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     opacity: 0;
     transform: translateX(100%);
@@ -1804,7 +1829,6 @@ html.portfolio-page body {
     left: 0;
     width: 100%;
     pointer-events: none;
-    height: 100%;
     will-change: opacity, transform;
 }
 
@@ -1814,6 +1838,7 @@ html.portfolio-page body {
     position: relative;
     pointer-events: auto;
     z-index: 2;
+    height: auto;
 }
 
 .review-slide.prev {
@@ -1945,7 +1970,7 @@ html.portfolio-page body {
 /* Work Experience Section */
 .work-experience-section {
     background-color: var(--colors-slate-100);
-    padding: 40px var(--tokens-spacing-16) var(--tokens-spacing-12);
+    padding: 40px clamp(16px, 2.41vw + 7.32px, 32px) var(--tokens-spacing-12);
     position: relative;
     z-index: 2;
 }
@@ -2269,6 +2294,189 @@ body.not-found {
     .btn-primary {
         font-size: var(--tokens-fontsize-base, 16px);
         padding: var(--tokens-spacing-2, 8px) var(--tokens-spacing-4, 16px);
+    }
+}
+
+/* Portfolio Password Protection Modal */
+.portfolio-blur-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    background-color: rgba(248, 250, 252, 0.3);
+    z-index: 98;
+    display: none;
+    pointer-events: none;
+}
+
+.portfolio-blur-overlay.active {
+    display: block;
+    pointer-events: auto;
+}
+
+.password-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 99;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.password-modal-overlay.active {
+    display: flex;
+    opacity: 1;
+}
+
+.password-modal-content {
+    background-color: var(--colors-slate-50, #f8fafc);
+    border-radius: 12px;
+    padding: var(--tokens-spacing-12, 48px);
+    max-width: 480px;
+    width: 90%;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    transform: scale(0.95);
+    transition: transform 0.3s ease;
+}
+
+.password-modal-overlay.active .password-modal-content {
+    transform: scale(1);
+}
+
+.password-modal-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: var(--tokens-fontsize-3xl, 30px);
+    line-height: 40px;
+    color: var(--colors-slate-900);
+    margin: 0 0 var(--tokens-spacing-8, 32px) 0;
+    text-align: center;
+}
+
+.password-modal-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--tokens-spacing-6, 24px);
+}
+
+.password-input {
+    width: 100%;
+    padding: var(--tokens-spacing-3, 12px) var(--tokens-spacing-4, 16px);
+    border: 2px solid var(--colors-slate-300, #cbd5e1);
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    font-size: var(--tokens-fontsize-base, 16px);
+    line-height: 24px;
+    color: var(--colors-slate-900);
+    background-color: #ffffff;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
+}
+
+.password-input:focus {
+    outline: none;
+    border-color: var(--colors-blue-600, #2563eb);
+}
+
+.password-input::placeholder {
+    color: var(--colors-slate-600, #475569);
+}
+
+.password-modal-buttons {
+    display: flex;
+    gap: var(--tokens-spacing-4, 16px);
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.password-btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--tokens-spacing-3, 12px) var(--tokens-spacing-6, 24px);
+    background-color: var(--colors-blue-600, #2563eb);
+    color: #f5f5f5;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: var(--tokens-fontsize-base, 16px);
+    line-height: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    white-space: nowrap;
+}
+
+.password-btn-primary:hover {
+    background-color: var(--colors-blue-700, #1d4ed8);
+}
+
+.password-btn-primary:active {
+    background-color: var(--colors-blue-800, #1e40af);
+}
+
+.password-btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--tokens-spacing-3, 12px) var(--tokens-spacing-6, 24px);
+    background-color: transparent;
+    color: var(--colors-slate-600, #475569);
+    border: 2px solid var(--colors-slate-300, #cbd5e1);
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: var(--tokens-fontsize-base, 16px);
+    line-height: 24px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.password-btn-secondary:hover {
+    background-color: var(--colors-slate-100, #f1f5f9);
+    border-color: var(--colors-slate-400, #94a3b8);
+    color: var(--colors-slate-900);
+}
+
+.password-error {
+    color: #dc2626;
+    font-family: 'Inter', sans-serif;
+    font-size: var(--tokens-fontsize-base, 16px);
+    line-height: 24px;
+    margin: 0;
+    text-align: center;
+}
+
+/* Portfolio Password Modal Responsive */
+@media (max-width: 768px) {
+    .password-modal-content {
+        padding: var(--tokens-spacing-8, 32px) var(--tokens-spacing-6, 24px);
+        width: 95%;
+    }
+
+    .password-modal-title {
+        font-size: var(--tokens-fontsize-xl, 20px);
+        line-height: 28px;
+        margin-bottom: var(--tokens-spacing-6, 24px);
+    }
+
+    .password-modal-buttons {
+        flex-direction: column;
+    }
+
+    .password-btn-primary,
+    .password-btn-secondary {
+        width: 100%;
     }
 }
   

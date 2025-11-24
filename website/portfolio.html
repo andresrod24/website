@@ -26,6 +26,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=Space+Mono:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body class="portfolio-page">
+    <!-- Password Protection Modal -->
+    <div class="password-modal-overlay" id="passwordModalOverlay">
+        <div class="password-modal-content">
+            <h2 class="password-modal-title">To access this page please provide a password</h2>
+            <form class="password-modal-form" id="passwordForm">
+                <input 
+                    type="password" 
+                    id="passwordInput" 
+                    class="password-input" 
+                    placeholder="Enter password"
+                    autocomplete="off"
+                    required
+                >
+                <div class="password-modal-buttons">
+                    <button type="submit" class="password-btn-primary">Enter password</button>
+                    <button type="button" class="password-btn-secondary" id="cancelPasswordBtn">Cancel</button>
+                </div>
+                <p class="password-error" id="passwordError" style="display: none;"></p>
+            </form>
+        </div>
+    </div>
+    <div class="portfolio-blur-overlay" id="portfolioBlurOverlay"></div>
+    
     <!-- Hero Banner Section -->
     <section class="hero-banner">
         <!-- Navigation Bar - Reusable Component -->
@@ -294,6 +317,7 @@
     <script src="mobile-menu.js"></script>
     <script src="footer-parallax.js"></script>
     <script src="portfolio-accordion.js"></script>
+    <script src="portfolio-password.js"></script>
 </body>
 </html>
 

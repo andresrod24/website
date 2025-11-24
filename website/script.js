@@ -1,3 +1,54 @@
+// Fix navigation links for local development vs Vercel
+// Vercel uses cleanUrls (no .html), but local servers need .html extension
+(function() {
+    // Check if we're running locally (localhost or 127.0.0.1)
+    const isLocal = window.location.hostname === 'localhost' || 
+                    window.location.hostname === '127.0.0.1' ||
+                    window.location.hostname === '';
+    
+    if (isLocal) {
+        // Intercept navigation clicks and fix URLs
+        document.addEventListener('click', function(e) {
+            const link = e.target.closest('a[href="/"], a[href="/portfolio"], a[href="/references"]');
+            if (link) {
+                const href = link.getAttribute('href');
+                if (href === '/') {
+                    e.preventDefault();
+                    window.location.href = '/index.html';
+                } else if (href === '/portfolio') {
+                    e.preventDefault();
+                    window.location.href = '/portfolio.html';
+                } else if (href === '/references') {
+                    e.preventDefault();
+                    window.location.href = '/references.html';
+                }
+            }
+        });
+        
+        // Also update href attributes for better UX (shows correct URL on hover)
+        function updateNavLinks() {
+            const navLinks = document.querySelectorAll('a[href="/"], a[href="/portfolio"], a[href="/references"]');
+            navLinks.forEach(link => {
+                const href = link.getAttribute('href');
+                if (href === '/') {
+                    link.setAttribute('href', '/index.html');
+                } else if (href === '/portfolio') {
+                    link.setAttribute('href', '/portfolio.html');
+                } else if (href === '/references') {
+                    link.setAttribute('href', '/references.html');
+                }
+            });
+        }
+        
+        // Update links when DOM is ready
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', updateNavLinks);
+        } else {
+            updateNavLinks();
+        }
+    }
+})();
+
 // Smooth scrolling for anchor links
 document.addEventListener('DOMContentLoaded', function() {
     // Add smooth scroll behavior
