@@ -12,6 +12,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://andresrodriguez.net/cibcmvprewardshub.html">
     <link rel="canonical" href="https://andresrodriguez.net/cibcmvprewardshub.html">
+    <link rel="icon" type="image/png" href="favicon.png">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-7CY5G9TNG4"></script>
     <script>
@@ -26,6 +27,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=Space+Mono:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Case Study Password Protection Modal -->
+    <div class="password-modal-overlay" id="caseStudyPasswordModal">
+        <div class="password-modal-content">
+            <h2 class="password-modal-title">To access this page
+please provide a
+password</h2>
+            <form class="password-modal-form" id="caseStudyPasswordForm">
+                <input 
+                    type="password" 
+                    id="caseStudyPasswordInput" 
+                    class="password-input" 
+                    placeholder="Enter password"
+                    autocomplete="off"
+                    required
+                >
+                <div class="password-modal-buttons">
+                    <button type="submit" class="btn-primary">Enter password</button>
+                    <button type="button" class="btn-secondary" id="cancelCaseStudyPasswordBtn">Cancel</button>
+                </div>
+                <p class="password-error" id="caseStudyPasswordError" style="display: none;"></p>
+            </form>
+        </div>
+    </div>
+    <div class="portfolio-blur-overlay" id="caseStudyBlurOverlay"></div>
+    
     <!-- Header Section - Reusable Nav Component -->
     <header class="detail-page-header">
         <nav class="nav-bar">
@@ -337,5 +363,6 @@
     <script src="script.js"></script>
     <script src="mobile-menu.js"></script>
     <script src="footer-parallax.js"></script>
+    <script src="case-study-password.js"></script>
 </body>
 </html>

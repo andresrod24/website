@@ -650,6 +650,18 @@ html.portfolio-page body {
     transform: rotate(90deg); /* Rotate from right (>) to down (v) */
 }
 
+.accordion-header.accordion-disabled,
+.accordion-header[disabled] {
+    cursor: not-allowed;
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.accordion-header.accordion-disabled .accordion-title,
+.accordion-header[disabled] .accordion-title {
+    color: var(--colors-slate-400, #94a3b8);
+}
+
 .accordion-content {
     max-height: 0;
     overflow: hidden;
@@ -2338,7 +2350,7 @@ body.not-found {
 }
 
 .password-modal-content {
-    background-color: var(--colors-slate-50, #f8fafc);
+    background-color: #ffffff;
     border-radius: 12px;
     padding: var(--tokens-spacing-12, 48px);
     max-width: 480px;
@@ -2360,6 +2372,7 @@ body.not-found {
     color: var(--colors-slate-900);
     margin: 0 0 var(--tokens-spacing-8, 32px) 0;
     text-align: center;
+    white-space: pre-line;
 }
 
 .password-modal-form {
@@ -2371,7 +2384,7 @@ body.not-found {
 .password-input {
     width: 100%;
     padding: var(--tokens-spacing-3, 12px) var(--tokens-spacing-4, 16px);
-    border: 2px solid var(--colors-slate-300, #cbd5e1);
+    border: 1px solid var(--colors-blue-600, #2563eb);
     border-radius: 8px;
     font-family: 'Inter', sans-serif;
     font-size: var(--tokens-fontsize-base, 16px);
@@ -2446,6 +2459,26 @@ body.not-found {
     background-color: var(--colors-slate-100, #f1f5f9);
     border-color: var(--colors-slate-400, #94a3b8);
     color: var(--colors-slate-900);
+}
+
+/* Password modal specific button styles */
+.password-modal-buttons .btn-secondary {
+    background-color: #ffffff;
+    border: 1px solid var(--colors-blue-600, #2563eb);
+    color: var(--colors-blue-600, #2563eb);
+    padding: var(--tokens-spacing-2, 8px) var(--tokens-spacing-4, 16px);
+    border-radius: 16px;
+}
+
+.password-modal-buttons .btn-secondary:hover {
+    background-color: var(--colors-blue-50, #eff6ff);
+    border-color: var(--colors-blue-700, #1d4ed8);
+    color: var(--colors-blue-700, #1d4ed8);
+}
+
+.password-modal-buttons .btn-primary {
+    padding: var(--tokens-spacing-2, 8px) var(--tokens-spacing-4, 16px);
+    border-radius: 16px;
 }
 
 .password-error {

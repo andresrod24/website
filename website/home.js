@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const phrases = [
     "Hey, You!",
     "Welcome Aboard.",
-    "Scroll To Discover My Case Studies.",
+    "Scroll To Know Me Better.",
   ];
 
   const fx = new TextScramble(el);

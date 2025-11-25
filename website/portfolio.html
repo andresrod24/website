@@ -12,6 +12,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://andresrodriguez.net/portfolio.html">
     <link rel="canonical" href="https://andresrodriguez.net/portfolio.html">
+    <link rel="icon" type="image/png" href="favicon.png">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-7CY5G9TNG4"></script>
     <script>
@@ -26,28 +27,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=Space+Mono:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body class="portfolio-page">
-    <!-- Password Protection Modal -->
-    <div class="password-modal-overlay" id="passwordModalOverlay">
-        <div class="password-modal-content">
-            <h2 class="password-modal-title">To access this page please provide a password</h2>
-            <form class="password-modal-form" id="passwordForm">
-                <input 
-                    type="password" 
-                    id="passwordInput" 
-                    class="password-input" 
-                    placeholder="Enter password"
-                    autocomplete="off"
-                    required
-                >
-                <div class="password-modal-buttons">
-                    <button type="submit" class="password-btn-primary">Enter password</button>
-                    <button type="button" class="password-btn-secondary" id="cancelPasswordBtn">Cancel</button>
-                </div>
-                <p class="password-error" id="passwordError" style="display: none;"></p>
-            </form>
-        </div>
-    </div>
-    <div class="portfolio-blur-overlay" id="portfolioBlurOverlay"></div>
     
     <!-- Hero Banner Section -->
     <section class="hero-banner">
@@ -242,9 +221,9 @@
             </div>
         </div>
 
-        <!-- Accordion: Art Direction (Closed by default) -->
+        <!-- Accordion: Art Direction (Disabled - No content yet) -->
         <div class="portfolio-accordion">
-            <button class="accordion-header" data-accordion="art-direction">
+            <button class="accordion-header accordion-disabled" data-accordion="art-direction" disabled>
                 <span class="accordion-title">Art Direction</span>
                 <div class="accordion-chevron-container">
                     <svg class="accordion-chevron" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -257,9 +236,9 @@
             </div>
         </div>
 
-        <!-- Accordion: Web Design (Closed by default) -->
+        <!-- Accordion: Web Design (Disabled - No content yet) -->
         <div class="portfolio-accordion">
-            <button class="accordion-header" data-accordion="web-design">
+            <button class="accordion-header accordion-disabled" data-accordion="web-design" disabled>
                 <span class="accordion-title">Web Design</span>
                 <div class="accordion-chevron-container">
                     <svg class="accordion-chevron" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -317,7 +296,6 @@
     <script src="mobile-menu.js"></script>
     <script src="footer-parallax.js"></script>
     <script src="portfolio-accordion.js"></script>
-    <script src="portfolio-password.js"></script>
 </body>
 </html>
 
